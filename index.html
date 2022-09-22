@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="sky-area">
+            
+            <div class="clouds">
+                <div class="cloud-one cloud-dupes"></div>
+                <div class="cloud-two cloud-dupes"></div>
+                <div class="cloud-three cloud-dupes"></div>
+            </div>
+
+            <div class="blimp">
+                <div class="point-tracker">0</div>
+                <div class="point-per-click-outer">$<span class="points-per-click-tracker">1</span> /c</div>
+            </div>
+
+                
+        </div>
+        <div class="ground-top-area">
+
+        </div>
+        <div class="ground-middle-area">
+            <div class="ground-middle-tree-area">
+                <div class="tree" id="tree1"></div>
+                <div class="tree" id="tree2"></div>
+                <div class="tree" id="tree3"></div>
+                <div class="tree" id="tree4"></div>
+                <div class="tree" id="tree5"></div>
+                <div class="tree" id="tree6"></div>
+                <div class="tree" id="tree7"></div>
+                <div class="tree" id="tree8"></div>
+                <div class="tree" id="tree9"></div>
+                <div class="tree" id="tree10"></div>
+                <div class="tree" id="tree11"></div>
+                <div class="tree" id="tree12"></div>
+                <div class="tree" id="tree13"></div>
+                <div class="tree" id="tree14"></div>
+                <div class="tree" id="tree15"></div>
+                <div class="tree" id="tree16"></div>
+                <div class="tree" id="tree17"></div>
+                <div class="tree" id="tree18"></div>
+                <div class="tree" id="tree19"></div>
+                <div class="tree" id="tree20"></div>
+                <div class="tree" id="tree21"></div>
+                <div class="tree" id="tree22"></div>
+                <div class="tree" id="tree23"></div>
+                <div class="tree" id="tree24"></div>
+                <div class="tree" id="tree25"></div>
+                <div class="tree" id="tree26"></div>
+                <div class="tree" id="tree27"></div>
+                <div class="tree" id="tree28"></div>
+                <div class="tree" id="tree29"></div>
+                <div class="tree" id="tree30"></div>
+                <div class="tree" id="tree31"></div>
+                <div class="tree" id="tree32"></div>
+                <div class="tree" id="tree33"></div>
+                <div class="tree" id="tree34"></div>
+                <div class="tree" id="tree35"></div>
+                <div class="tree" id="tree36"></div>
+                <div class="tree" id="tree37"></div>
+                <div class="tree" id="tree38"></div>
+                <div class="tree" id="tree39"></div>
+                <div class="tree" id="tree40"></div>
+
+                <div class="lumberjack"></div>
+            </div>
+            <div class="upgrade-tab-outer">
+                <div class="upgrade-body"></div>
+                <div class="basic-button">
+                    <div class="basic-button-text">
+                        BASIC
+                    </div>
+                </div>
+                <div class="op-button">
+                    <div class="op-button-text">
+                        OP
+                    </div>
+                </div>
+                <div class="upgrade-inners">
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-1"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                MORE PEOPLE
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U1" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U1price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-2"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                MORE TREES
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U2" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U2price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-3"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                STONE AXE
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U3" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U3price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-4"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                FAST SHOES
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U4" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U4price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-5"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                BASIC TOOLS
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U5" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U5price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-6"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                SAFETY HATS
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U6" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U6price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-7"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                TRANSPORTATION
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U7" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U7price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-8"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                FACTORY
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U8" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U8price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-9"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                ???
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U9" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U9price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upgrades">
+                        <div class="upgrade-icon upgrade-icon-10"></div>
+                        <div class="upgrade-text-outer">
+                            <div class="upgrade-text">
+                                GOOD WOOD
+                            </div>
+                        </div>
+                        <div class="upgrade-buy-button" id="U10" onclick="upgradeBuy(this.id)">
+                            <div class="upgrade-buy-button-text">
+                                $<span class="U10price">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ground-bottom-area">
+            <div class="nav-buttons">
+                <div class="upgrade-button nav-button-dupes" id="upgradeButton" onclick="buttonClickAnimation(this.id), openUpgrade()">
+                    <div class="upgrade-button-svg button-svgs"></div>
+                </div>
+                <div class="clicker-button nav-button-dupes" id="clickerButton" onclick="buttonClickAnimation(this.id), clicker()">
+                    <div class="clicker-button-svg button-svgs"></div>
+                </div>
+                <div class="building-button nav-button-dupes" id="buildingButton" onclick="buttonClickAnimation(this.id), openBuildings()">
+                    <div class="building-button-svg button-svgs"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
